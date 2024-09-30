@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* Mengatur warna latar belakang pada body */
+}
+  
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Header styles */
+/* Header styles */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8); /* Initial background color */
+    transition: background 0.3s ease; /* Transition effect when scrolling */
+    padding: 10px 0;
+}
+
+header.scrolled {
+    background: rgba(0, 0, 0, 0.3); /* Transparent background when scrolled */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Menyebarkan item di dalam navbar */
+    align-items: center; /* Mengatur item secara vertikal */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #74ebd5;
+}
+
+/* Gaya untuk tombol CTA (Call-to-Action) */
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: rgba(0, 86, 179, 0.5);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px; /* Membuat pinggiran tombol lebih halus */
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Menempatkan tombol di sebelah kanan */
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Other content styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 70px; /* Give space for fixed header */
+}
+
+#beranda {
+    color: black; /* Mengubah warna teks menjadi hitam */
+    height: 100vh; /* Memastikan beranda tetap penuh layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1.5s ease;
+}
+
+#beranda h1 {
+    font-size: 48px; /* Ukuran font untuk judul */
+    margin-bottom: 20px; /* Jarak antara judul dan paragraf */
+}
+
+#beranda p {
+    font-size: 20px; /* Ukuran font untuk paragraf */
+}
+
+#fitur {
+    background: transparent; /* Menghapus warna latar belakang agar mengikuti body */
+}
+  
+#tentang {
+    background: #e0e0e0; /* Tetap menggunakan warna berbeda untuk Tentang Kita */
+}
+  
+.fitur-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.fitur-item {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 100px; /* Menetapkan tinggi minimum */
+    width: 30%; /* Mengatur lebar yang konsisten untuk setiap item */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Agar konten merata secara vertikal */
+    box-sizing: border-box; /* Agar padding tidak memengaruhi lebar total */
+}
+  
+.fitur-item:hover {
+    transform: translateY(-10px);
+}
+  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0; /* Padding lebih sedikit untuk tampilan mobile */
+        font-size: 14px; /* Ukuran font lebih kecil di mobile */
+    }
+
+    .navbar {
+        flex-direction: row; /* Mengatur navbar menjadi baris pada tampilan mobile */
+        justify-content: space-between; /* Menjaga jarak antara item di dalam navbar */
+        align-items: center; /* Mengatur item secara vertikal */
+    }
+
+    .nav-list {
+        flex-direction: row; /* Mengatur daftar navigasi menjadi baris */
+        align-items: center; /* Mengatur item daftar secara vertikal */
+        margin-bottom: 0; /* Menghapus margin bawah pada daftar navigasi */
+    }
+
+    .nav-list li {
+        margin: 0 10px; /* Jarak antar item navigasi */
+    }
+
+    .fitur-content {
+        flex-direction: column; /* Mengatur konten fitur menjadi kolom pada tampilan mobile */
+        align-items: center; /* Mengatur item di tengah */
+    }
+
+    .fitur-item {
+        width: 90%; /* Menetapkan lebar item fitur agar lebih kecil */
+        margin: 10px 0; /* Mengurangi margin untuk item fitur */
+    }
+}
+
+.copyright {
+    margin-top: 20px; /* Jarak antara paragraf dan copyright */
+    font-size: 14px; /* Ukuran font untuk copyright */
+    color: #555; /* Warna teks copyright */
+}
