@@ -1,0 +1,178 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Font untuk body */
+    background-image: url('images/UPN2.jpg'); /* Gambar latar belakang */
+    background-size: cover; /* Mengatur agar gambar menutupi seluruh halaman */
+    background-position: center; /* Mengatur posisi gambar di tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-attachment: fixed; /* Mengatur gambar tetap saat menggulir */
+    margin: 0; /* Menghilangkan margin */
+    padding: 0; /* Menghilangkan padding */
+    min-height: 100vh; /* Memastikan tinggi minimal body adalah 100% dari viewport */
+}
+
+
+.container {
+    width: 80%; /* Lebar kontainer */
+    margin: 0 auto; /* Mengatur margin otomatis agar berada di tengah */
+    padding: 20px; /* Padding di dalam kontainer */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan transparansi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    border-radius: 8px; /* Mengatur sudut membulat */
+    min-height: 80vh; /* Tinggi minimal untuk kontainer agar tidak terlalu kecil */
+}
+
+
+h1 {
+    font-family: 'Lobster', cursive; /* Font untuk judul */
+    color: rgb(66, 133, 244); /* Warna judul */
+    text-align: center; /* Memusatkan teks */
+    font-size: 2.5em; /* Ukuran font yang lebih besar */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek kedalaman */
+    margin-bottom: 20px; /* Jarak bawah untuk judul */
+    margin-left: -3%
+}
+
+nav {
+    margin-bottom: 20px; /* Margin bawah untuk navigasi */
+}
+
+.navbar {
+    list-style: none; /* Menghilangkan titik di daftar */
+    padding: 0; /* Menghilangkan padding */
+    display: flex; /* Mengatur tampilan flex untuk navbar */
+    justify-content: flex-start; /* Mengatur agar berada di kiri */
+}
+
+.navbar li {
+    margin-right: 20px; /* Jarak antar item navbar */
+}
+
+.navbar a {
+    font-family: 'Roboto', sans-serif; /* Font untuk tautan navbar */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: rgb(66, 133, 244); /* Warna tautan */
+    font-weight: bold; /* Menebalkan teks */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+textarea {
+    width: 100%; /* Lebar textarea */
+    height: 100px; /* Tinggi textarea */
+    padding: 10px; /* Padding dalam textarea */
+    border-radius: 4px; /* Sudut membulat */
+    border: 1px solid #ccc; /* Border */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+button {
+    background-color: rgb(66, 133, 244); /* Warna latar belakang tombol */
+    color: #ffffff; /* Warna teks tombol */
+    padding: 10px 15px; /* Padding dalam tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Menunjukkan bahwa tombol bisa diklik */
+}
+
+button:hover {
+    background-color: rgb(53, 122, 232); /* Warna saat hover */
+}
+
+.comments-section {
+    margin-top: 20px; /* Jarak atas untuk bagian komentar */
+}
+
+.comment {
+    padding: 10px; /* Padding dalam komentar */
+    border: 1px solid #e0e0e0; /* Border komentar */
+    border-radius: 4px; /* Sudut membulat */
+    margin-bottom: 10px; /* Jarak bawah untuk komentar */
+    transition: background-color 0.3s; /* Animasi saat hover */
+}
+
+.comment:hover {
+    background-color: rgba(66, 133, 244, 0.1); /* Efek hover pada komentar */
+}
+
+.comment strong {
+    color: rgb(66, 133, 244); /* Warna nama */
+}
+
+.comment small {
+    color: #777; /* Warna waktu */
+}
+
+.comment a {
+    color: rgb(66, 133, 244); /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.comment a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.logout-button {
+    display: inline-block; /* Menampilkan tombol logout */
+    background-color: rgb(244, 67, 54); /* Warna latar belakang tombol logout */
+    color: #ffffff; /* Warna teks tombol logout */
+    padding: 10px 15px; /* Padding dalam tombol logout */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut membulat */
+    margin-bottom: 20px; /* Jarak bawah untuk tombol logout */
+}
+
+.logout-button:hover {
+    background-color: rgb(213, 50, 45); /* Efek hover untuk tombol logout */
+}
+
+/* Tombol Kembali ke Home */
+.back-to-home {
+    display: inline-block; /* Menampilkan tombol kembali ke home */
+    padding: 10px 20px; /* Padding dalam tombol kembali */
+    background-color: rgb(66, 133, 244); /* Warna latar belakang tombol kembali */
+    color: #ffffff; /* Warna teks tombol kembali */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut membulat */
+    transition: background-color 0.3s; /* Animasi transisi */
+    margin-top: 10px; /* Margin atas untuk tombol kembali */
+}
+
+.back-to-home:hover {
+    background-color: rgb(53, 122, 232); /* Warna saat hover */
+}
+
+/* Deskripsi Kolom Komentar */
+.comment-description {
+    background-color: rgba(235, 235, 235, 0.8); /* Warna latar belakang deskripsi dengan transparansi */
+    border: 1px solid #e0e0e0; /* Border */
+    padding: 15px; /* Padding dalam deskripsi */
+    border-radius: 5px; /* Sudut membulat */
+    margin-bottom: 20px; /* Jarak di bawah deskripsi */
+}
+
+/* Gaya Paginasi */
+.pagination {
+    display: flex; /* Mengatur tampilan flex untuk paginasi */
+    justify-content: center; /* Memusatkan konten paginasi */
+    margin-top: 20px; /* Jarak atas untuk paginasi */
+}
+
+.pagination a {
+    padding: 10px 15px; /* Padding dalam tautan paginasi */
+    margin: 0 5px; /* Jarak antar tautan */
+    background-color: rgb(66, 133, 244); /* Warna latar belakang tautan paginasi */
+    color: #ffffff; /* Warna teks tautan paginasi */
+    border-radius: 5px; /* Sudut membulat */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.pagination a:hover {
+    background-color: rgb(53, 122, 232); /* Warna saat hover untuk tautan paginasi */
+}
+.logo {
+    height: 200px; /* Atur sesuai kebutuhan */
+    margin-right: 20px; /* Jarak dari elemen lainnya */
+    margin-left: 270%;
+}
